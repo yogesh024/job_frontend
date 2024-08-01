@@ -46,7 +46,7 @@ const NavBar = () => {
           <NavLink to="/" exact activeClassName="text-blue-400" className="text-white">
             Start Search
           </NavLink>
-         { isAuthroized &&user&&user.isRecruiter? <NavLink to="/My-Job" activeClassName="text-blue-400" className="text-white">
+         { isAuthroized &&user&&user.isRecruiter? <NavLink to="/My-Job" activeClassName="text-blue-400" className="text-wht">
             My Job
           </NavLink>
           : null }
@@ -103,10 +103,10 @@ const NavBar = () => {
       </nav>
       {isMenuOpen && (
         <div className="md:hidden flex flex-col space-y-2 p-4 bg-black">
-          <NavLink to="/" exact activeClassName="text-blue-400" className="text-white flex items-center gap-2 text-2xl" onClick={handleMenuToggler}>
+          <NavLink to="/" exact activeClassName="text-blue-400" className="text-wht flex items-center gap-2 text-2xl" onClick={handleMenuToggler}>
             Start Search
           </NavLink>
-          { isAuthroized &&user&&user.isRecruiter? <NavLink to="/My-Job" activeClassName="text-blue-400" className="text-white">
+          { isAuthroized &&user&&user.isRecruiter? <NavLink to="/My-Job" activeClassName="text-blue-400" className="text-wht">
             My Job
           </NavLink>
           : null }
@@ -127,7 +127,7 @@ const NavBar = () => {
             isAuthroized
           // user||isLoggedIn 
           ? (
-            <div className="flex items-center gap-2 text-2xl text-white">
+            <div className="flex items-center gap-2 text-2xl text-wht">
               <button onClick={handleProfileToggler} className="text-white text-2xl">
                 <FaUserCircle />
               </button>
@@ -150,7 +150,7 @@ const NavBar = () => {
             </div>
           ) : (
             <div className='text-base text-primary font-medium space-x-5 lg:block'>
-              <NavLink to="/login" activeClassName="text-blue-400" className="py-2 px-5 bg-blue border text-white rounded">
+              <NavLink to="/login" activeClassName="text-blue-400" className="py-2 px-5 bg-blue border text-wht rounded">
                 Login
               </NavLink>
             </div>

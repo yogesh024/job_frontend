@@ -122,9 +122,9 @@ const handleEdit = () => {
                     <i className="fab fa-skype text-custom-blue-dark"></i>
                   </button>
                 </div>
-                <button className="bg-custom-blue text-white rounded-lg py-2 px-4">
+                {user.isRecruiter?<button className="bg-custom-blue text-white rounded-lg py-2 px-4">
                   Message now
-                </button>
+                </button>:""}
                 <div className="flex justify-between text-center mt-5 mb-2">
                   <div>
                     <p className="text-xl text-custom-gray-dark">Full Name</p>
