@@ -15,7 +15,7 @@ export const CreateJob = () => {
     formState: { errors },
     reset
   } = useForm();
-
+// h
   const {isAuthroized,user}=useContext(Context);
   const navigate=useNavigate();
    console.log(isAuthroized)
