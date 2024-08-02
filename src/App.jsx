@@ -16,7 +16,7 @@ function App() {
   useEffect(()=>{
     const fetchUser=async()=>{
       try {
-        const res=await axios.get("/api/auth/getUser",{withCredentials:true});
+        const res=await axios.get("https://back-again-kedv.onrender.com/api/auth/getUser",{withCredentials:true});
         setUser(res.data.user);
         // console.log(res.data.user);
         setIsAuthroized(true);
