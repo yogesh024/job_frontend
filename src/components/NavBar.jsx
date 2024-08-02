@@ -46,7 +46,7 @@ const NavBar = () => {
           <NavLink to="/" exact activeClassName="text-blue-400" className="text-white">
             Start Search
           </NavLink>
-         { isAuthroized &&user&&user.isRecruiter? <NavLink to="/My-Job" activeClassName="text-blue-400" className="text-wht">
+         { isAuthroized &&user&&user.isRecruiter? <NavLink to="/My-Job" activeClassName="text-blue-400" className="text-white">
             My Job
           </NavLink>
           : null }
