@@ -19,7 +19,7 @@ export const Home = () => {
   useEffect(() => {
     setIsLoading(true);
 
-    fetch("/api/getjobs/all-jobs")
+    fetch("https://back-again-kedv.onrender.com/api/getjobs/all-jobs")
       .then(res => res.json())
       .then(data => {
         setJobs(data);
