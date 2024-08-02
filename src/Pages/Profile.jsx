@@ -41,7 +41,7 @@ const Profile = () => {
 useEffect(() => {
   const fetchProfile = async () => {
     try {
-      const response = await axios.get(`https://back-again-kedv.onrender.com/api/profile/${id}`);
+      const response = await axios.get(`/api/profile/${id}`);
       setProfile(response.data);
       console.log(response.data);
     } catch (err) {
